@@ -1,15 +1,15 @@
 function isPalindrome(str){
-    let phrase = str.toLowerCase()
+    let phrase = str.toLowerCase();
 
     for(i = 0; i < phrase.length; i++){
-        splitReverseJoinString = phrase.split("").reverse().join("")
+        splitReverseJoinString = phrase.split("").reverse().join("");
 
-        palindrome = splitReverseJoinString.replace(/\s/g, '')
+        palindrome = splitReverseJoinString.replace(/\s/g, '');
 
         if(palindrome == phrase.replace(/\s/g, '')){
-            return true
+            return true;
         }
-        return false
+        return false;
     }
 }
 
@@ -18,6 +18,6 @@ function arrayMaxMin(arr){
         var bigger = Math.max.apply(null, arr);
         var smaller = Math.min.apply(null, arr);
 
-        return [smaller, bigger]
+        return [smaller, bigger];
     }
 }
