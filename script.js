@@ -15,9 +15,10 @@ function isPalindrome(str){
 
 function arrayMaxMin(arr){
     for(i = 0; i < arr.length; i++){
-        var bigger = Math.max.apply(null, arr);
-        var smaller = Math.min.apply(null, arr);
+        let bigger = Math.max.apply(null, arr);
+        let smaller = Math.min.apply(null, arr);
 
         return [smaller, bigger];
     }
 }
+
