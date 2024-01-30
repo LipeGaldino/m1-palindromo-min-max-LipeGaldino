@@ -1,7 +1,23 @@
 function isPalindrome(str){
-    /* Seu código aqui */
+    let phrase = str.toLowerCase()
+
+    for(i = 0; i < phrase.length; i++){
+        splitReverseJoinString = phrase.split("").reverse().join("")
+
+        palindrome = splitReverseJoinString.replace(/\s/g, '')
+
+        if(palindrome == phrase.replace(/\s/g, '')){
+            return true
+        }
+        return false
+    }
 }
 
 function arrayMaxMin(arr){
-    /* Seu código aqui */
+    for(i = 0; i < arr.length; i++){
+        var bigger = Math.max.apply(null, arr);
+        var smaller = Math.min.apply(null, arr);
+
+        return [smaller, bigger]
+    }
 }
